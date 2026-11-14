@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>日文文法小筆記</title>
+  <meta name="description" content="給 JLPT N5～N4 學習者的日文文法小筆記。每一則文法都用同一套格式書寫。">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" lang="ja">あ</span>
+        <span class="brand-text">
+          <b>日文文法小筆記</b>
+          <span>N5～N4 Grammar Notes</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">JLPT N5～N4</p>
+      <h1>把常考的文法，<br>寫成<span class="mark">同一套</span>小筆記。</h1>
+      <p>每一篇都用固定格式來寫：意思、接續、例句、常見錯誤、相似文法，最後附一小題練習。之後要加新的文法，照 AGENTS.md 的規則複製模板繼續寫就好。</p>
+    </section>
+
+    <div class="toolbar">
+      <div class="search">
+        <label class="visually-hidden" for="search" style="position:absolute;left:-999px;width:1px;height:1px;overflow:hidden;">搜尋文法</label>
+        <input id="search" type="search" placeholder="搜尋文法，例如：曾經、てもいい、必須…" autocomplete="off">
+      </div>
+      <div class="filters" role="group" aria-label="依級別篩選">
+        <button type="button" class="filter" data-level="all" aria-pressed="true">全部</button>
+        <button type="button" class="filter" data-level="N5" aria-pressed="false">N5</button>
+        <button type="button" class="filter" data-level="N4" aria-pressed="false">N4</button>
+      </div>
+    </div>
+
+    <section class="grid" id="list">
+      <a class="card" href="grammar/ta-koto-ga-aru.html" data-level="N5" data-grammar="〜たことがある たことがある 曾經 經驗 去過 吃過 N5">
+        <span class="tape" aria-hidden="true"></span>
+        <span class="badge badge-n5">N5</span>
+        <h2 lang="ja">〜たことがある</h2>
+        <p>用來講「曾經做過」的經驗。沒做過就用否定形「〜たことがない」。</p>
+        <span class="go">看筆記 →</span>
+      </a>
+
+      <a class="card" href="grammar/te-mo-ii.html" data-level="N5" data-grammar="〜てもいい てもいい 可以 許可 借嗎 坐下 N5">
+        <span class="tape" aria-hidden="true"></span>
+        <span class="badge badge-n5">N5</span>
+        <h2 lang="ja">〜てもいい</h2>
+        <p>用來徵求或給予許可，也就是「可以……嗎」。不必做則用「〜なくてもいい」。</p>
+        <span class="go">看筆記 →</span>
+      </a>
+
+      <a class="card" href="grammar/nagara.html" data-level="N5" data-grammar="〜ながら ながら 一邊 同時 聽音樂 走路 N5">
+        <span class="tape" aria-hidden="true"></span>
+        <span class="badge badge-n5">N5</span>
+        <h2 lang="ja">〜ながら</h2>
+        <p>同一個人一邊做 A、一邊做 B。前半是伴隨的動作，後半才是主要動作。</p>
+        <span class="go">看筆記 →</span>
+      </a>
+
+      <a class="card" href="grammar/te-shimau.html" data-level="N4" data-grammar="〜てしまう てしまう ちゃう じゃう 做完 後悔 不小心 N4">
+        <span class="tape" aria-hidden="true"></span>
+        <span class="badge badge-n4">N4</span>
+        <h2 lang="ja">〜てしまう</h2>
+        <p>事情做完了，或發生了讓人後悔、來不及挽回的結果。口語常說成「ちゃう／じゃう」。</p>
+        <span class="go">看筆記 →</span>
+      </a>
+
+      <a class="card" href="grammar/nakereba-naranai.html" data-level="N4" data-grammar="〜なければならない なければならない 必須 非做不可 なきゃ なくちゃ N4">
+        <span class="tape" aria-hidden="true"></span>
+        <span class="badge badge-n4">N4</span>
+        <h2 lang="ja">〜なければならない</h2>
+        <p>表示必須、非做不可。口語常縮成「なきゃ」「なくちゃ」。</p>
+        <span class="go">看筆記 →</span>
+      </a>
+    </section>
+
+    <p id="empty" class="empty">沒有符合的文法，換個關鍵字或級別試試。</p>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span><b>日文文法小筆記</b> · 自學用小站</span>
+    <span>規則寫在 <a href="AGENTS.md">AGENTS.md</a></span>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
